@@ -13,7 +13,6 @@ const App = () => {
       {isOpen && <Modal />}
       <Navbar />
       <CartContainer />
-      <CartItem />
     </Fragment>
   )
 }

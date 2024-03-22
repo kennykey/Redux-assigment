@@ -2,8 +2,8 @@ import React from 'react';
 import store from './store';
 import App from './App';
 import ReactDOM from 'react-dom/client'
-import './index.css';
 import { Provider } from 'react-redux';
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
