@@ -3,7 +3,7 @@ import { useSelector,useDispatch } from 'react-redux'
 import { increase, decrease } from '../features/cart/cartSlice'
 
 const CartItem = ({ id, img, title, price }) => {
-  const { amount } = useSelector((state) => state.cart.amount)
+  const { amount } = useSelector((state) => state.cart)
   const dispatch = useDispatch()
 
   const handleIncrease = () =>{
