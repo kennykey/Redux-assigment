@@ -4,8 +4,9 @@ import CartItem from './CartItem'
 import cartItems from '../cartItems'
 
 const CartContainer = () => {
-  const { amount } = useSelector((state) => state.cart)
+  const { amount,price } = useSelector((state) => state.cart)
   const dispatch = useDispatch()
+    
 
 
   if (amount < 0) {
@@ -32,7 +33,7 @@ const CartContainer = () => {
           <hr />
           <div className="cart-total">
             <h4>
-              total <span>$0</span>
+              total <span>${amount * price}</span>
             </h4>
           </div>
           <button
